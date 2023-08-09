@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Content Management Tool</title>
+
+    <link rel="stylesheet" href="content_management.css">
+</head>
+<div class="blogs">
+    <div class="heading">
+        <h1>Content Management Tool</h1>
+    </div>
+    <div class="form">
+        <form id="blogform">
+            <table>
+                <tr>
+                    <td>
+                        <lable>Title:</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="title"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Content:</lable>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="content"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Image:</lable>
+
+                        <input type="file" id="image">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Video:</lable>
+                        <input type="file" id="video">
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<div id="form-submission">
+    <h1>My blogs</h1>
+    <p><strong>Title:</strong><span id="title-show"></span></p>
+    <p><strong>Content:</strong><span id="content-show"></span></p>
+    <p><strong>Image:</strong></p>
+    <img id="image-show" src="">
+    <p><strong>Video:</strong></p>
+    <video id="video-show" src=""></video>
+</div>
+<script src="content_management.js"></script>
+</body>
+
+</html>
